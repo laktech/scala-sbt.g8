@@ -10,7 +10,8 @@ object $name;format="Camel"$Build extends Build {
       name := "$name$",
       organization := "$organization$",
       version := "$version$",
-      scalaVersion := "$scala_version$"
+      scalaVersion := "$scala_version$",
+      retrieveManaged := true
       // add other settings here
     )
   )
