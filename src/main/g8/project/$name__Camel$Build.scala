@@ -18,6 +18,6 @@ object $name;format="Camel"$Build extends Build {
 	"org.scalacheck" %% "scalacheck" % "1.11.3" % "test",
 	"junit" % "junit" % "4.11" % "test"
       )
-    )
+    ) ++ net.virtualvoid.sbt.graph.Plugin.graphSettings
   )
 }
