@@ -11,8 +11,13 @@ object $name;format="Camel"$Build extends Build {
       organization := "$organization$",
       version := "$version$",
       scalaVersion := "$scala_version$",
-      retrieveManaged := true
-      // add other settings here
+      scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
+      retrieveManaged := true,
+      libraryDependencies ++= Seq(
+	"org.scalatest" %% "scalatest" % "2.1.0" % "test",
+	"org.scalacheck" %% "scalacheck" % "1.11.3" % "test",
+	"junit" % "junit" % "4.11" % "test"
+      )
     )
   )
 }
