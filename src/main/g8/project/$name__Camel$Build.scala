@@ -14,7 +14,7 @@ object $name;format="Camel"$Build extends Build {
       scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
       retrieveManaged := true,
       libraryDependencies ++= Seq(
-	"org.scalatest" %% "scalatest" % "2.1.0" % "test",
+	"org.scalatest" %% "scalatest" % "2.2.4" % "test",
 	"org.scalacheck" %% "scalacheck" % "1.11.3" % "test",
 	"junit" % "junit" % "4.11" % "test"
       )
